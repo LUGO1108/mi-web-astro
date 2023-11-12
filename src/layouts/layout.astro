@@ -1,0 +1,27 @@
+---
+import Footer from "../component/Footer.astro";
+interface Props {
+    title: string
+}
+import '../styles/layout.css'
+const {title} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 - {title}</title>
+</head>
+<body>
+    <main class="mx-auto container md:py-10">
+        <slot/>
+        
+    </main>
+    <Footer/>
+
+    
+    
+</body>
+</html>
